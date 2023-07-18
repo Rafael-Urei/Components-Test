@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-self: center;
+  font-family: "Inter", sans-serif;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: 32%;
+  color: rgba(128, 128, 128, 0.212);
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+input {
+  height: 32px;
+  font-family: "Inter", sans-serif;
+  border: 2px solid rgba(128, 128, 128, 0.219);
+  border-radius: 4px;
+  outline: none;
+  color: rgb(41, 12, 95);
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 100ms;
+}
+
+input:focus {
+  border: 2px solid rgba(65, 13, 134, 0.63);
+}
+
+.closed {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.158);
+  transition: 200ms ease-in;
+  opacity: 0;
+}
+.opened {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.158);
+  transition: 200ms ease-in;
+}
+
+.item {
+  height: 45px;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(14, 4, 32, 0.534);
+  transition: 200ms;
+  border-bottom: 1px solid rgba(4, 0, 255, 0.082);
+}
+
+.item:hover {
+  background-color: rgba(161, 161, 241, 0.055);
+  color: rgb(41, 12, 95);
+}
